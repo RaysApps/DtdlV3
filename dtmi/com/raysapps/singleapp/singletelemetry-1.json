@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:com:raysapps:SingleApp:SingleTelemetry;1",
+  "@type": "Interface",
+  "displayName": "singleTelemetry",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "temperature",
+      "displayName": "Temperature",
+      "unit": "degreeCelsius",
+      "schema": "double"
+    }
+  ]
+}

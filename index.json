@@ -1,0 +1,69 @@
+{
+  "links": {
+    "self": "index.json"
+  },
+  "models": {
+    "dtmi:com:raysapps:Androidapp:AndroidApp;1": {
+      "displayName": "AndroidApp",
+      "description": "IoT-AndroidaApp"
+    },
+    "dtmi:com:raysapps:CloudDeviceApp:CloudDeviceApp;1": {
+      "displayName": "CloudDeviceApp",
+      "description": "IoT-CloudDeviceApp"
+    },
+    "dtmi:com:example:withErrors;1": {
+      "displayName": "withErrors"
+    },
+    "dtmi:com:raysapps:Inheritance:ConferenceRoom;1": {
+      "displayName": "ConferenceRoom",
+      "description": "IoT-InheritanceSample"
+    },
+    "dtmi:com:raysapps:Inheritance:Room;1": {
+      "displayName": "Room",
+      "description": "IoT-RoomSample"
+    },
+    "dtmi:com:raysapps:mxchipApp:mxchipApp;1": {
+      "displayName": "MxChipApp",
+      "description": "IoT-MxChipApp"
+    },
+    "dtmi:com:raysapps:MxchipApp:MxchipAppDeviceInformationReadProperty;1": {
+      "displayName": "Device Information",
+      "description": "IoT-Device Information"
+    },
+    "dtmi:com:raysapps:MxchipApp:mxchipAppSensorsTelemetry;1": {
+      "displayName": "ReportedSensorValue",
+      "description": "IoT-ReportedSensorValue"
+    },
+    "dtmi:com:raysapps:MxchipApp:MxchipSensors;1": {
+      "displayName": "mxChipSensors",
+      "description": "IoT-MxChipSensors"
+    },
+    "dtmi:com:raysapps:MxchipApp:MxchipSettings;1": {
+      "displayName": "mxChipSettings",
+      "description": "IoT-MxChipSettings"
+    },
+    "dtmi:com:raysapps:MxchipApp:MxchipTelemetry;1": {
+      "displayName": "mxChipTelemetry",
+      "description": "IoT-MxChipTelemetry"
+    },
+    "dtmi:com:raysapps:raysenumschema:raysenumschematype;1": {
+      "displayName": "raysenumschematype",
+      "description": "raysEnumSample"
+    },
+    "dtmi:com:raysapps:RemoteAndroidApp:RemoteAndroidApp;1": {
+      "displayName": "RemoteAndroidApp",
+      "description": "IoT-RemoteAndroidApp"
+    },
+    "dtmi:com:raysapps:RemoteMxchipApp:RemoteMxchipApp;1": {
+      "displayName": "RemoteMxChipApp",
+      "description": "IoT-RemoteMxChipApp"
+    },
+    "dtmi:com:raysapps:SingleApp:SingleProperty;1": {
+      "displayName": "singleProperty"
+    },
+    "dtmi:com:raysapps:SingleApp:SingleTelemetry;1": {
+      "displayName": "singleTelemetry"
+    }
+  },
+  "version": "1.0"
+}

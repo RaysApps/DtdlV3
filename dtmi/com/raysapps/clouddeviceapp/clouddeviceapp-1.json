@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:com:raysapps:CloudDeviceApp:CloudDeviceApp;1",
+  "@type": "Interface",
+  "displayName": "CloudDeviceApp",
+  "description": "IoT-CloudDeviceApp",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "XCoord",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "YCoord",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "Avatar",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "interval",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "request": {
+        "name": "delay",
+        "schema": "integer"
+      }
+    }
+  ]
+}

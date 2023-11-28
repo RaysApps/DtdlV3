@@ -1,0 +1,243 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:com:raysapps:MxchipApp:MxchipSettings;1",
+  "@type": "Interface",
+  "displayName": "mxChipSettings",
+  "description": "IoT-MxChipSettings",
+  "schemas": [
+    {
+      "@id": "dtmi:com:raysapps:MxchipApp:DisplayType;1",
+      "@type": "Enum",
+      "valueSchema": "integer",
+      "displayName": "DisplayType",
+      "enumValues": [
+        {
+          "name": "Version",
+          "displayName": "Version",
+          "enumValue": 1
+        },
+        {
+          "name": "FirmWare",
+          "displayName": "FirmWare",
+          "enumValue": 2
+        },
+        {
+          "name": "WifiStatus",
+          "displayName": "WifiStatus",
+          "enumValue": 3
+        },
+        {
+          "name": "SensorInfo",
+          "displayName": "SensorInfo",
+          "enumValue": 4
+        },
+        {
+          "name": "TelemetryCount",
+          "displayName": "TelemetryCount",
+          "enumValue": 5
+        },
+        {
+          "name": "TelemetryInterval",
+          "displayName": "TelemetryInterval",
+          "enumValue": 6
+        },
+        {
+          "name": "ReportedInterval",
+          "displayName": "ReportedInterval",
+          "enumValue": 7
+        },
+        {
+          "name": "ReportedCount",
+          "displayName": "ReportedCount",
+          "enumValue": 8
+        }
+
+      ]
+    }
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "latestTimeStamp",
+      "displayName": "Latest updated timestamp",
+      "schema": "dateTime",
+      "description": "Last Updated Time"
+
+    },
+    {
+      "@type": "Property",
+      "name": "firmwareVersion",
+      "displayName": "Firmware Version",
+      "schema": "string",
+      "description": "FirmWare Version"
+    },
+    {
+      "@type": "Property",
+      "name": "wifiSSID",
+      "displayName": "WIFI SSID",
+      "schema": "string",
+      "description": "WIFI SSID"
+    },
+    {
+      "@type": "Property",
+      "name": "wifiIP",
+      "displayName": "Wifi IP",
+      "schema": "string",
+      "description": "Wifi IP Address"
+    },
+    {
+      "@type": "Property",
+      "name": "screenLine0",
+      "schema": "string",
+      "writable": true
+    },
+    {
+
+      "@type": "Property",
+      "name": "screenFormat1",
+      "schema": "dtmi:com:raysapps:MxchipApp:DisplayType;1",
+      "writable": true
+    },
+    {
+
+      "@type": "Property",
+      "name": "screenFormat2",
+      "schema": "dtmi:com:raysapps:MxchipApp:DisplayType;1",
+      "writable": true
+    },
+    {
+
+      "@type": "Property",
+      "name": "screenFormat3",
+      "schema": "dtmi:com:raysapps:MxchipApp:DisplayType;1",
+      "writable": true
+    },
+    {
+
+      "@type": "Property",
+      "name": "rgbLEDR",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+
+      "@type": "Property",
+      "name": "rgbLEDB",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+
+      "@type": "Property",
+      "name": "rgbLEDG",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+
+      "@type": "Property",
+      "name": "rgbLEDState",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+
+      "@type": "Property",
+      "name": "userLEDState",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "request": {
+        "name": "rebootTime",
+        "displayName": "Reboot Time",
+        "description": "Requested time to reboot the device.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "scheduledTime",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GetSensorReportedPropInterval",
+      "response": {
+        "name": "ReportedTimeInterval",
+        "displayName": "Reported Time",
+        "description": "The interval time at which the sensors properties are reported",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GetConfiguration",
+      "displayName": "Configuration",
+      "description": "Fetches current configurtion on the device",
+      "response": {
+        "name": "Configuration",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "screenFormat1",
+              "displayName": "Display Line 1",
+              "schema": "dtmi:com:raysapps:MxchipApp:DisplayType;1"
+
+            },
+            {
+              "name": "screenFormat2",
+              "displayName": "Display Line 2",
+              "schema": "dtmi:com:raysapps:MxchipApp:DisplayType;1"
+
+            },
+            {
+              "name": "screenFormat3",
+              "displayName": "Display Line 3",
+              "schema": "dtmi:com:raysapps:MxchipApp:DisplayType;1"
+            },
+
+            {
+              "name": "rgbLEDR",
+              "displayName": "LED R Value",
+              "schema": "integer"
+
+            },
+            {
+              "name": "rgbLEDB",
+              "displayName": "LED B Value",
+              "schema": "integer"
+
+            },
+            {
+              "name": "rgbLEDG",
+              "displayName": "LED G Value",
+              "schema": "integer"
+
+            },
+            {
+              "name": "rgbLEDState",
+              "displayName": "LED State",
+              "schema": "boolean"
+
+            },
+            {
+              "name": "userLEDState",
+              "displayName": "LED State",
+              "schema": "boolean"
+
+            }
+
+          ]
+        }
+
+      }
+    }
+
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:com:raysapps:mxchipapp:mxchipapp;1",
+  "@type": "Interface",
+  "displayName": "MxChipApp",
+  "description": "IoT-MxChipApp",
+  "contents": [
+    {
+      "@type": "Component",
+      "schema": "dtmi:com:raysapps:MxchipApp:MxchipSettings;1",
+      "name": "mxChipSettings",
+      "displayName": "Configure device settings ",
+      "description": "Configure screen and LED display settings"
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:com:raysapps:MxchipApp:MxchipSensors;1",
+      "name": "mxChipSensors",
+      "displayName": "View reported sensor values",
+      "description": "Report sensor values at specified interval"
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:com:raysapps:MxchipApp:MxchipTelemetry;1",
+      "name": "mxChipTelemetry",
+      "displayName": "View Sensor Telemetry",
+      "description": "MxChip Sensors Info"
+    }
+
+  ]
+
+}

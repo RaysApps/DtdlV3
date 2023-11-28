@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:com:raysapps:MxchipApp:mxchipAppSensorsTelemetry;1",
+  "@type": "Interface",
+  "displayName": "ReportedSensorValue",
+  "description": "IoT-ReportedSensorValue",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "temperature",
+      "displayName": "Temperature",
+      "unit": "degreeCelsius",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "name": "humidity",
+      "displayName": "Humidity",
+      "unit": "percent",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "pressure",
+      "displayName": "Pressure",
+      "unit": "kilopascal",
+      "schema": "double"
+    }
+  ]
+}

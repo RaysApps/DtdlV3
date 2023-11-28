@@ -1,0 +1,45 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:com:raysapps:raysenumschema:raysenumschematype;1",
+  "@type": "Interface",
+  "displayName": "raysenumschematype",
+  "description": "raysEnumSample",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "state",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "offline",
+            "displayName": "Offline",
+            "enumValue": 1
+          },
+          {
+            "name": "online",
+            "displayName": "Online",
+            "enumValue": 2
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "deviceStatus",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "request": {
+        "name": "delay",
+        "schema": "integer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:com:raysapps:SingleApp:SingleProperty;1",
+  "@type": "Interface",
+  "displayName": "singleProperty",
+  "contents": [
+     {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "name": "pressure",
+        "displayName": "Pressure",
+        "unit": "kilopascal",
+        "schema": "double"
+      }
+  ]
+}

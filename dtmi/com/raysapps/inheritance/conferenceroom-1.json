@@ -1,0 +1,20 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:com:raysapps:Inheritance:ConferenceRoom;1",
+  "@type": "Interface",
+  "displayName": "ConferenceRoom",
+  "description": "IoT-InheritanceSample",
+  "extends": "dtmi:com:raysapps:Inheritance:Room;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "capacity",
+      "schema": "integer"
+    }
+  ]
+
+
+}

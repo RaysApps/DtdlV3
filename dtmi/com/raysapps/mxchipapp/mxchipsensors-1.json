@@ -1,0 +1,232 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:com:raysapps:MxchipApp:MxchipSensors;1",
+  "@type": "Interface",
+  "displayName": "mxChipSensors",
+  "description": "IoT-MxChipSensors",
+  "contents": [
+    {
+
+      "@type": "Property",
+      "name": "interval",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+
+      "@type": "Property",
+      "name": "fetch",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "temperature",
+      "displayName": "Temperature",
+      "unit": "degreeCelsius",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Property",
+        "RelativeHumidity"
+      ],
+      "name": "humidity",
+      "displayName": "Humidity",
+      "unit": "percent",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
+      "name": "pressure",
+      "displayName": "Pressure",
+      "unit": "kilopascal",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Property",
+        "Acceleration"
+      ],
+      "name": "accelerometerX",
+      "displayName": "Accelerometer X",
+      "schema": "double",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Property",
+        "Acceleration"
+      ],
+      "name": "accelerometerY",
+      "displayName": "Accelerometer Y",
+      "schema": "double",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Property",
+        "Acceleration"
+      ],
+      "name": "accelerometerZ",
+      "displayName": "Accelerometer Z",
+      "schema": "double",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Property",
+        "AngularVelocity"
+      ],
+      "name": "gyroscopeX",
+      "displayName": "Gyroscope X",
+      "schema": "double",
+      "unit": "degreePerSecond"
+    },
+    {
+      "@type": [
+        "Property",
+        "AngularVelocity"
+      ],
+      "name": "gyroscopeY",
+      "displayName": "Gyroscope Y",
+      "schema": "double",
+      "unit": "degreePerSecond"
+    },
+    {
+      "@type": [
+        "Property",
+        "AngularVelocity"
+      ],
+      "name": "gyroscopeZ",
+      "displayName": "Gyroscope Z",
+      "schema": "double",
+      "unit": "degreePerSecond"
+    },
+    {
+      "@type": "Property",
+      "name": "magnetometerX",
+      "displayName": "Magnetometer X / mgauss",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "magnetometerY",
+      "displayName": "Magnetometer Y / mgauss",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "magnetometerZ",
+      "displayName": "Magnetometer Z / mgauss",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "GetSensors",
+      "displayName": "GetSensors",
+      "description": "Fetch current Sensor data",
+      "response": {
+        "name": "Sensors",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "temperature",
+              "displayName": "Temperature",
+              "schema": "double"
+
+            },
+            {
+              "name": "humidity",
+              "displayName": "Humidity",
+              "schema": "double"
+            },
+            {
+              "name": "pressure",
+              "displayName": "Pressure",
+              "schema": "double"
+            },
+            {
+              "name": "accelerometerX",
+              "displayName": "Accelerometer X",
+              "schema": "double"
+            },
+            {
+              "name": "accelerometerY",
+              "displayName": "Accelerometer Y",
+              "schema": "double"
+            },
+            {
+              "name": "accelerometerZ",
+              "displayName": "Accelerometer Y",
+              "schema": "double"
+            },
+            {
+              "name": "gyroscopeX",
+              "displayName": "Gyroscope X",
+              "schema": "double"
+            },
+            {
+              "name": "gyroscopeY",
+              "displayName": "Gyroscope Y",
+              "schema": "double"
+            },
+            {
+              "name": "gyroscopeZ",
+              "displayName": "Gyroscope Z",
+              "schema": "double"
+            },
+            {
+              "name": "magnetometerX",
+              "displayName": "Magnetometer X / mgauss",
+              "schema": "double"
+            },
+            {
+              "name": "magnetometerY",
+              "displayName": "Magnetometer Y / mgauss",
+              "schema": "double"
+
+            },
+            {
+              "name": "magnetometerZ",
+              "displayName": "Magnetometer Z / mgauss",
+              "schema": "double"
+
+            },
+            {
+              "name": "reportedFrequencyInSeconds",
+              "displayName": "Reported Frequency",
+              "schema": "integer"
+
+            },
+            {
+              "name": "reportedFrequencyState",
+              "displayName": "Reported Frequency State",
+              "schema": "boolean"
+
+            }
+
+
+          ]
+        }
+      }
+    }
+
+
+
+
+
+
+  ]
+}

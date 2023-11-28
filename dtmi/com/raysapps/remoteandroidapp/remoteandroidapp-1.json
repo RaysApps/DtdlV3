@@ -1,0 +1,10 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:com:raysapps:RemoteAndroidApp:RemoteAndroidApp;1",
+  "@type": "Interface",
+  "displayName": "RemoteAndroidApp",
+  "description": "IoT-RemoteAndroidApp"
+}
